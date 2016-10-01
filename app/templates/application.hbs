@@ -1,7 +1,17 @@
-<h2 id="title">Welcome to Ember</h2>
-<div id="div">
-
-div gradient
-
-</div>
+<section class="container">
+  <header class="header" role="banner">
+    <img class="logo" src="images/muro-logo-black.png">
+    <div class="row">
+      <p>
+        Hello, I’m German. MURO is a canvas where I share my work and passion for all things design and tech, I’m a Chicago based product designer and front end developer.
+      </p>
+      <!-- <a href="/">root </a>
+      <a href="/home">home </a>
+      <a href="/projects">projects </a> -->
+      {{#link-to 'index'}}root{{/link-to}}
+      {{#link-to 'home'}}home{{/link-to}}
+      {{#link-to 'projects'}}projects{{/link-to}}
+    </div>
+  </header>
+</section>
 {{outlet}}

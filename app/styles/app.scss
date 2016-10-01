@@ -1,17 +1,20 @@
+@import "normalize";
+@import "breakpoints";
+@import "grid";
 @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 
 
 
-html, body {
-  margin: 20px;
-  h2{
-    text-decoration:underline;
-    color: red;
-  }
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
 }
 
-
-#div {
-  @include background(linear-gradient(red, green) left repeat);
-
+.header {
+  padding: 70px 0 50px;
+  .logo {
+    max-width: 145px;
+    height: auto;
+  }
 }
