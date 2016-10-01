@@ -1,1 +1,8 @@
 <h1>Add new project</h1>
+<form {{action 'addProject' on='submit'}}>
+  <p>Title: {{input type='text' valueBinding="projectTitle"}}</p>
+  <p>Description: {{input type='text' valueBinding="projectDescription"}}</p>
+  <p>
+    {{input type='submit' value='submit'}}
+  </p>
+</form>
