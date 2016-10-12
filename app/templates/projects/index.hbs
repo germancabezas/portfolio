@@ -1,0 +1,8 @@
+{{#link-to 'projects.new'}} Add Projects {{/link-to}}
+<h2> projects </h2>
+{{#each model as |project|}}
+  <ul>
+    <li>{{project.id}}{{project.title}}{{project.description}} {{#link-to 'projects.edit' project.id}}Edit{{/link-to}}</li>
+  </ul>
+{{/each}}
+{{outlet}}

@@ -1,0 +1,30 @@
+/* Media Queries */
+
+$mobile: "(min-width: 0px) and (max-width: 767px)";
+$tablet: "(min-width: 768px) and (max-width: 991px)";
+$desktop: "(min-width: 992px) and (max-width: 1199px)";
+$large-desktop: "(min-width: 1200px) and (max-width: 1599px)";
+$extra-large-desktop: "(min-width: 1600px)";
+$small-screen-height: "(max-height: 550px)";
+
+/*
+USING MEDIA QUERIES
+======  Inside the class
+.class-1 {
+    @include span-columns(3);
+    display: block;
+      @media #{$tablet} {
+          display: none;
+          @include span-columns(5);
+      }
+}
+======= or inside the media query
+@media #{$tablet} {
+    .class-1 {
+        @include span-columns(3);
+    }
+    .class-2 {
+        @include span-columns(9);
+    }
+}
+*/
