@@ -1,6 +1,5 @@
 @import "normalize";
 @import "breakpoints";
-@import "grid";
 @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 
 
@@ -16,5 +15,34 @@ body {
   .logo {
     max-width: 145px;
     height: auto;
+  }
+}
+
+.pr-th {
+  width: 20%;
+  float:left;
+  position: relative;
+
+  .pr-th-img {
+    position: relative;
+    height: 300px;
+    background: #e8ebee;
+    border: 1px solid white;
+
+    img {
+      width: auto;
+      height: 100%;
+      position: absolute;
+      left: 50%;
+      margin-left: -50%;
+    }
+  }
+
+  .pr-th-des {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 }

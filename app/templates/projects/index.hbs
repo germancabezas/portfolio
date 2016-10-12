@@ -1,8 +1,13 @@
-{{#link-to 'projects.new'}} Add Projects {{/link-to}}
+<!-- {{#link-to 'projects.new'}} Add Projects {{/link-to}} -->
 <h2> projects </h2>
-{{#each model as |project|}}
-  <ul>
-    <li>{{project.id}}{{project.title}}{{project.description}} {{#link-to 'projects.edit' project.id}}Edit{{/link-to}}</li>
-  </ul>
-{{/each}}
+  {{#each model as |project|}}
+    <div class="pr-th">
+      <div class="pr-th-img">
+        <img src="{{project.thumb}}">
+      </div>
+      <div class="pr-th-des">
+        {{project.id}}{{project.title}}{{project.description}}
+      </div>
+    </div>
+  {{/each}}
 {{outlet}}
