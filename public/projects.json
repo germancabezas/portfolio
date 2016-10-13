@@ -3,62 +3,62 @@
   [
     {
       "id": 1,
-      "thumb": "https://dl.dropboxusercontent.com/u/89299474/PI_WebPortfolio_SBC_Responsive.jpg",
+      "thumb": "https://dl.dropboxusercontent.com/u/89299474/muro-thumb.png",
       "title": "MURO Identity",
       "description": "The muro identity was crate to lok cool and modern"
       },
     {
       "id": 2,
-      "thumb": "https://dl.dropboxusercontent.com/u/89299474/PI_WebPortfolio_SBC_Responsive.jpg",
+      "thumb": "https://dl.dropboxusercontent.com/u/89299474/cch-thumb.png",
       "title": "Connect Care Hero",
       "description": "Connects People with their loved ones at the nursing home"
       },
     {
       "id": 3,
-      "thumb": "https://dl.dropboxusercontent.com/u/89299474/PI_WebPortfolio_SBC_Responsive.jpg",
-      "title": "Connect Care Hero",
+      "thumb": "https://dl.dropboxusercontent.com/u/89299474/actulize-thumb.png",
+      "title": "Actualize",
       "description": "Connects People with their loved ones at the nursing home"
       },
     {
       "id": 4,
-      "thumb": "https://dl.dropboxusercontent.com/u/89299474/PI_WebPortfolio_SBC_Responsive.jpg",
-      "title": "Connect Care Hero",
+      "thumb": "https://dl.dropboxusercontent.com/u/89299474/mcapl-thumbs.png",
+      "title": "MC Appliance",
       "description": "Connects People with their loved ones at the nursing home"
       },
-    {
+      {
       "id": 5,
-      "thumb": "https://dl.dropboxusercontent.com/u/89299474/PI_WebPortfolio_SBC_Responsive.jpg",
-      "title": "Connect Care Hero",
+      "thumb": "https://dl.dropboxusercontent.com/u/89299474/napw-thumbs.png",
+      "title": "NAPW",
       "description": "Connects People with their loved ones at the nursing home"
       },
     {
       "id": 6,
-      "thumb": "https://dl.dropboxusercontent.com/u/89299474/PI_WebPortfolio_SBC_Responsive.jpg",
-      "title": "MURO Identity",
-      "description": "The muro identity was crate to lok cool and modern"
-      },
-    {
-      "id": 7,
-      "thumb": "https://dl.dropboxusercontent.com/u/89299474/PI_WebPortfolio_SBC_Responsive.jpg",
-      "title": "Connect Care Hero",
+      "thumb": "https://dl.dropboxusercontent.com/u/89299474/sbc-thumb.png",
+      "title": "Seattle's Best Cooffe",
       "description": "Connects People with their loved ones at the nursing home"
       },
     {
+      "id": 7,
+      "thumb": "https://dl.dropboxusercontent.com/u/89299474/cdlat-thumb.png",
+      "title": "Code Latino",
+      "description": "The muro identity was crate to lok cool and modern"
+      },
+    {
       "id": 8,
-      "thumb": "https://dl.dropboxusercontent.com/u/89299474/PI_WebPortfolio_SBC_Responsive.jpg",
-      "title": "Connect Care Hero",
+      "thumb": "https://dl.dropboxusercontent.com/u/89299474/fotosr-thumb.png",
+      "title": "Fotosearch",
       "description": "Connects People with their loved ones at the nursing home"
       },
     {
       "id": 9,
-      "thumb": "https://dl.dropboxusercontent.com/u/89299474/PI_WebPortfolio_SBC_Responsive.jpg",
-      "title": "Connect Care Hero",
+      "thumb": "https://dl.dropboxusercontent.com/u/89299474/elm-thumb.png",
+      "title": "Elmurst Online",
       "description": "Connects People with their loved ones at the nursing home"
       },
     {
       "id": 10,
-      "thumb": "https://dl.dropboxusercontent.com/u/89299474/PI_WebPortfolio_SBC_Responsive.jpg",
-      "title": "Connect Care Hero",
+      "thumb": "https://dl.dropboxusercontent.com/u/89299474/pn-thumb.png",
+      "title": "PeerNation",
       "description": "Connects People with their loved ones at the nursing home"
       }
   ]

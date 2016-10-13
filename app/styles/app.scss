@@ -1,4 +1,5 @@
 @import "normalize";
+@import "mixins";
 @import "breakpoints";
 @import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 
@@ -8,6 +9,11 @@ body {
   font-family: 'Rubik', sans-serif;
   font-size: 15px;
   font-weight: 400;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
 }
 
 .header {
@@ -22,19 +28,26 @@ body {
   width: 20%;
   float:left;
   position: relative;
+  @include aspect-ratio(1, 1);
+  cursor: pointer;
+  overflow: hidden;
+
+  @media #{$desktop} {
+    width: 20%;
+  }
+
+  @media #{$tablet} {
+    width: 33.33333%;
+  }
 
   .pr-th-img {
     position: relative;
     height: 300px;
     background: #e8ebee;
-    border: 1px solid white;
 
     img {
-      width: auto;
-      height: 100%;
-      position: absolute;
-      left: 50%;
-      margin-left: -50%;
+      width: 100%;
+      transition: all .5s ease-in-out;
     }
   }
 
@@ -44,5 +57,25 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
+    background: rgba(0, 0, 0, .8);
+    color: white;
+    text-align: center;
+    visibility: hidden;
+    @include opacity(0);
+    box-sizing: border-box;
   }
+
+  &:hover {
+    .pr-th-des {
+      visibility: visible;
+      @include opacity(1);
+      padding: 40px 10px;
+      @include transition(opacity 0.4s ease-in 0.3s);
+    }
+
+    .pr-th-img img {
+      transform: scale(1.04);
+    }
+  }
+
 }
