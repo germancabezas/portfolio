@@ -8,18 +8,22 @@
             <img src="{{project.thumb}}">
           </div>
           <div class="pr-th-des">
-            {{project.id}}{{project.title}}{{project.description}}
+            {{project.title}}{{project.id}}
             <button class="btn inverse" {{action 'showPreview' on="click"}}> Preview </button>
-            {{#if isPreviewing}}
+            <!-- {{#if isPreviewing}} -->
               <div class="preview">
-                {{project.show}}
                 <div class="container">
+                  {{#each project.show as |attr|}}
+                      <img src="{{attr.image}}">
+                      {{attr.description}}
+                  {{/each}}
                   <button class="btn" {{action 'hidePreview'}}> Close </button>
                 </div>
               </div>
-            {{/if}}
+            <!-- {{/if}} -->
           </div>
         </div>
       </div>
+    </hr>
   {{/each}}
 {{outlet}}
