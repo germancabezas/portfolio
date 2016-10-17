@@ -6,4 +6,5 @@ export default DS.Model.extend({
   thumb: attr('string'),
   title: attr('string'),
   description: attr('string'),
+  show: attr('string')
 });

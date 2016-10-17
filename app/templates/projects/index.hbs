@@ -2,15 +2,24 @@
   <h2> PROJECTS</h2>
 </div>
   {{#each model as |project|}}
-    <div class="pr-th">
-      <div class="content">
-        <div class="pr-th-img">
-          <img src="{{project.thumb}}">
-        </div>
-        <div class="pr-th-des">
-          {{project.id}}{{project.title}}{{project.description}}
+      <div class="pr-th">
+        <div class="content">
+          <div class="pr-th-img">
+            <img src="{{project.thumb}}">
+          </div>
+          <div class="pr-th-des">
+            {{project.id}}{{project.title}}{{project.description}}
+            <button class="btn inverse" {{action 'showPreview' on="click"}}> Preview </button>
+            {{#if isPreviewing}}
+              <div class="preview">
+                {{project.show}}
+                <div class="container">
+                  <button class="btn" {{action 'hidePreview'}}> Close </button>
+                </div>
+              </div>
+            {{/if}}
+          </div>
         </div>
       </div>
-    </div>
   {{/each}}
 {{outlet}}
