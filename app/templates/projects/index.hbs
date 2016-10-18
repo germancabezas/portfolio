@@ -10,7 +10,7 @@
           <div class="pr-th-des">
             {{project.title}}{{project.id}}
             <button class="btn inverse" {{action 'showPreview' on="click"}}> Preview </button>
-            <!-- {{#if isPreviewing}} -->
+            {{#if isPreviewing}}
               <div class="preview">
                 <div class="container">
                   {{#each project.show as |attr|}}
@@ -20,7 +20,7 @@
                   <button class="btn" {{action 'hidePreview'}}> Close </button>
                 </div>
               </div>
-            <!-- {{/if}} -->
+            {{/if}}
           </div>
         </div>
       </div>
