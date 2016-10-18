@@ -1,0 +1,9 @@
+{{title}}
+
+
+{{#each model as |project|}}
+  {{outlet}}
+  {{#link-to "projects.project" project.id}}
+    {{project.id}}{{project.title}}<br>
+  {{/link-to}}
+{{/each}}
