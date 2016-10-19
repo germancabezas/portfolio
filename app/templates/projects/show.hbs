@@ -1,0 +1,8 @@
+{{#link-to 'projects'}}back{{/link-to}}
+<div class="container">
+  <h2>{{model.title}}</h2>
+  {{#each model.images as |item|}}
+      <img src="{{item.image}}">
+  {{/each}}
+  <p>{{model.description}}</p>
+</div>

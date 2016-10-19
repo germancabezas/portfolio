@@ -1,7 +1,9 @@
 <div class="container">
   <h2> PROJECTS</h2>
 </div>
-  {{#each model as |project|}}
+
+{{#each model as |project|}}
+  {{#link-to "projects.show" project.id}}
       <div class="pr-th">
         <div class="content">
           <div class="pr-th-img">
@@ -9,20 +11,9 @@
           </div>
           <div class="pr-th-des">
             {{project.title}}{{project.id}}
-            <button class="btn inverse" {{action 'showPreview' on="click"}}> Preview </button>
-            {{#if isPreviewing}}
-              <div class="preview">
-                <div class="container">
-                  {{#each project.show as |attr|}}
-                      <img src="{{attr.image}}">
-                      {{attr.description}}
-                  {{/each}}
-                  <button class="btn" {{action 'hidePreview'}}> Close </button>
-                </div>
-              </div>
-            {{/if}}
           </div>
         </div>
       </div>
+    {{/link-to}}
   {{/each}}
 {{outlet}}
