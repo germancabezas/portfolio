@@ -3,7 +3,7 @@
 </div>
 {{#each model as |project|}}
   {{outlet}}
-  {{#link-to "projects.project" project.id}}
+  {{#link-to "project" project.id}}
     {{project.id}}{{project.title}}<br>
   {{/link-to}}
 {{/each}}
@@ -19,7 +19,7 @@
             <button class="btn inverse" {{action 'showPreview' on="click"}}> Preview </button>
             {{#if isPreviewing}}
               <div class="preview">
-                <div class="container">
+            a    <div class="container">
                   {{#each project.show as |attr|}}
                       <img src="{{attr.image}}">
                       {{attr.description}}
