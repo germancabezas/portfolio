@@ -1,1 +1,19 @@
-<h1> home </h1>
+<div class="container">
+  <h3 class="section-title"> RECENT WORK</h3>
+</div>
+{{#each model as |project|}}
+  {{#if project.recent}}
+    {{#link-to "projects.show" project.id}}
+        <div class="pr-th">
+          <div class="content">
+            <div class="pr-th-img">
+              <img src="{{project.thumb}}">
+            </div>
+            <div class="pr-th-des">
+              {{project.title}}{{project.id}}
+            </div>
+          </div>
+        </div>
+      {{/link-to}}
+    {{/if}}
+  {{/each}}

@@ -6,6 +6,7 @@
       "thumb": "https://dl.dropboxusercontent.com/u/89299474/muro-thumb.png",
       "title": "MURO Identity",
       "description": "long description",
+      "recent": true,
       "images": [
           {"image": "https://dl.dropboxusercontent.com/u/89299474/muro-thumb.png"},
           {"image": "https://dl.dropboxusercontent.com/u/89299474/muro-thumb.png"}
@@ -16,6 +17,7 @@
       "thumb": "https://dl.dropboxusercontent.com/u/89299474/cch-thumb.png",
       "title": "Connect Care Hero",
       "description": "long description",
+      "recent": true,
       "images": [
           {"image": "https://dl.dropboxusercontent.com/u/89299474/cch-thumb.png"},
           {"image": "https://dl.dropboxusercontent.com/u/89299474/cch-thumb.png"}
@@ -26,6 +28,7 @@
       "thumb": "https://dl.dropboxusercontent.com/u/89299474/actulize-thumb.png",
       "title": "Actualize",
       "description": "long description",
+      "recent": true,
       "images": [
           {"image": "https://dl.dropboxusercontent.com/u/89299474/actulize-thumb.png"},
           {"image": "https://dl.dropboxusercontent.com/u/89299474/actulize-thumb.png"}
@@ -36,6 +39,7 @@
       "thumb": "https://dl.dropboxusercontent.com/u/89299474/mcapl-thumbs.png",
       "title": "MC Appliance",
       "description": "long description",
+      "recent": false,
       "images": [
           {"image": "https://dl.dropboxusercontent.com/u/89299474/actulize-thumb.png"},
           {"image": "https://dl.dropboxusercontent.com/u/89299474/actulize-thumb.png"}
@@ -46,6 +50,7 @@
       "thumb": "https://dl.dropboxusercontent.com/u/89299474/napw-thumbs.png",
       "title": "NAPW",
       "description": "long description",
+      "recent": false,
       "images": [
           {"image": "https://dl.dropboxusercontent.com/u/89299474/napw-thumbs.png"},
           {"image": "https://dl.dropboxusercontent.com/u/89299474/napw-thumbs.png"}
@@ -56,6 +61,7 @@
       "thumb": "https://dl.dropboxusercontent.com/u/89299474/sbc-thumb.png",
       "title": "Seattle's Best Cooffe",
       "description": "long description",
+      "recent": false,
       "images": [
           {"image": "https://dl.dropboxusercontent.com/u/89299474/sbc-thumb.png"},
           {"image": "https://dl.dropboxusercontent.com/u/89299474/sbc-thumb.png"}
@@ -66,6 +72,7 @@
       "thumb": "https://dl.dropboxusercontent.com/u/89299474/cdlat-thumb.png",
       "title": "Code Latino",
       "description": "long description",
+      "recent": false,
       "images": [
           {"image": "https://dl.dropboxusercontent.com/u/89299474/sbc-thumb.png"},
           {"image": "https://dl.dropboxusercontent.com/u/89299474/sbc-thumb.png"}
@@ -76,6 +83,7 @@
       "thumb": "https://dl.dropboxusercontent.com/u/89299474/fotosr-thumb.png",
       "title": "Fotosearch",
       "description": "long description",
+      "recent": false,
       "images": [
           {"image": "https://dl.dropboxusercontent.com/u/89299474/sbc-thumb.png"},
           {"image": "https://dl.dropboxusercontent.com/u/89299474/sbc-thumb.png"}
@@ -86,6 +94,7 @@
       "thumb": "https://dl.dropboxusercontent.com/u/89299474/elm-thumb.png",
       "title": "Elmurst Online",
       "description": "Connects People with their loved ones at the nursing home",
+      "recent": false,
       "images": [
           {"image": "https://dl.dropboxusercontent.com/u/89299474/elm-thumb.png"},
           {"image": "https://dl.dropboxusercontent.com/u/89299474/elm-thumb.png"}
@@ -96,6 +105,7 @@
       "thumb": "https://dl.dropboxusercontent.com/u/89299474/pn-thumb.png",
       "title": "PeerNation",
       "description": "long description",
+      "recent": false,
       "images": [
           {"image": "https://dl.dropboxusercontent.com/u/89299474/pn-thumb.png"},
           {"image": "https://dl.dropboxusercontent.com/u/89299474/pn-thumb.png"}
