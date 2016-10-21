@@ -9,8 +9,12 @@
             <div class="pr-th-img">
               <img src="{{project.thumb}}">
             </div>
-            <div class="pr-th-des">
-              {{project.title}}{{project.id}}
+            <div class="pr-th-des"><br>
+              <h2>{{project.title}}</h2><br>
+              TAGS:
+              {{#each project.tags as |tag|}}
+                  {{tag.tag}},
+              {{/each}}
             </div>
           </div>
         </div>

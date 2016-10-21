@@ -3,13 +3,13 @@
   [
     {
       "id": 1,
-      "thumb": "https://dl.dropboxusercontent.com/u/89299474/muro-thumb.png",
-      "title": "MURO Identity",
+      "thumb": "https://dl.dropboxusercontent.com/u/89299474/muro/muro-thumb.png",
+      "title": "muro.design",
       "description": "long description",
+      "tags": [{"tag":"Identity"},{"tag":"Personal"},{"tag":"logo"},{"tag":"Web Design"}],
       "recent": true,
       "images": [
-          {"image": "https://dl.dropboxusercontent.com/u/89299474/muro-thumb.png"},
-          {"image": "https://dl.dropboxusercontent.com/u/89299474/muro-thumb.png"}
+          {"image": "https://dl.dropboxusercontent.com/u/89299474/muro/muro-home.jpg"}
         ]
       },
     {

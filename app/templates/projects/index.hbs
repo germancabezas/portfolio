@@ -10,10 +10,13 @@
             <img src="{{project.thumb}}">
           </div>
           <div class="pr-th-des">
-            {{project.title}}{{project.id}}
+            <h2>{{project.title}}</h2><br>
+            TAGS:<br>
+            {{#each project.tags as |tag|}}
+                {{tag.tag}},
+            {{/each}}
           </div>
         </div>
       </div>
     {{/link-to}}
   {{/each}}
-{{outlet}}

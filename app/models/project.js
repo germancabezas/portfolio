@@ -10,4 +10,7 @@ export default DS.Model.extend({
   images: attr({
     image: attr('string'),
   }),
+  tags: attr({
+    tag: attr('string'),
+  }),
 });
