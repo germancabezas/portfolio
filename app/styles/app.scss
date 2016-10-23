@@ -7,8 +7,9 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
+  position: relative;
 }
 
 .container {
@@ -17,9 +18,9 @@ body {
 }
 
 .header {
-  padding: 70px 0 50px;
+  padding: 100px 0 50px;
   .logo {
-    max-width: 145px;
+    max-width: 160px;
     height: auto;
   }
 }
@@ -30,6 +31,7 @@ body {
   position: relative;
   @include aspect-ratio(1, 1);
   overflow: hidden;
+  background-color: #eaeaea;
 
   @media #{$desktop} {
     width: 20%;
@@ -113,5 +115,66 @@ body {
     border: 1px solid white;
     border-top: 0;
     color: white;
+  }
+}
+
+// Project Show page
+
+.container-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.item-description {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background: white;
+  padding: 5% 2%;
+  box-sizing: border-box;
+}
+
+.item-body {
+  width: 70%;
+  padding: 5% 2%;
+  box-sizing: border-box;
+  margin-left: 30%;
+  background: #f7f7f7;
+  overflow-y: auto;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.back-link {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(247, 247, 247, 0.7);
+  z-index: 300;
+}
+
+
+// FOOTER
+
+.footer {
+  background: black;
+  color: white;
+  padding: 100px 0;
+  margin-top: 50px;
+  text-align: center;
+  clear: both;
+
+  .container {
+    padding: 20px;
   }
 }
