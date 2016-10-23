@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 400;
   position: relative;
 }
@@ -18,9 +18,9 @@ body {
 }
 
 .header {
-  padding: 70px 0 50px;
+  padding: 100px 0 50px;
   .logo {
-    max-width: 145px;
+    max-width: 160px;
     height: auto;
   }
 }
@@ -31,6 +31,7 @@ body {
   position: relative;
   @include aspect-ratio(1, 1);
   overflow: hidden;
+  background-color: #eaeaea;
 
   @media #{$desktop} {
     width: 20%;
@@ -148,7 +149,7 @@ body {
   overflow-y: auto;
 
   img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -160,4 +161,20 @@ body {
   height: 50px;
   background-color: rgba(247, 247, 247, 0.7);
   z-index: 300;
+}
+
+
+// FOOTER
+
+.footer {
+  background: black;
+  color: white;
+  padding: 100px 0;
+  margin-top: 50px;
+  text-align: center;
+  clear: both;
+
+  .container {
+    padding: 20px;
+  }
 }
