@@ -27,12 +27,19 @@ body {
   }
 }
 
+.menu-container {
+  position: relative;
+}
+
 .menu-trigger {
     width: 35px;
     height: 35px;
     cursor: pointer;
     display: inline-block;
-    float: right;
+    position: absolute;
+    right: 0;
+    z-index: 300;
+    background: white;
 
     .line {
       width: 100%;
@@ -52,6 +59,38 @@ body {
         width: 100%;
       }
     }
+}
+
+.menu {
+  position: absolute;
+  right: -50px;
+  z-index: 100;
+  @include opacity(0);
+  padding: 10px;
+  visibility: hidden;
+  background-color: white;
+  @include transition(opacity 0.5s ease-out);
+
+  a {
+    margin-right: 0px;
+    text-decoration: none;
+  }
+
+  &.active {
+    min-height: 50px;
+    visibility: visible;
+    right: 35px;
+    @include opacity(1);
+    @include transition(all 0.2s ease-in);
+    @include transition(opacity 0.5s ease-in);
+
+    a {
+      margin-right: 30px;
+      color: black;
+      text-shadow: none;
+      @include transition(all 0.2s ease-in);
+    }
+  }
 }
 
 .header-brief {

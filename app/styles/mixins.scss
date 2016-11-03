@@ -23,6 +23,8 @@
 }
 
 
-@mixin scale($scale) {
-	 @include transform(scale($scale));
+@mixin scale($height, $width) {
+  -ms-transform: scale($height, $width); /* IE 9 */
+  -webkit-transform: scale($height, $width); /* Safari */
+  transform: scale($height, $width)
 }

@@ -6,13 +6,10 @@
         <span class="line"></span>
         <span class="line"></span>
       </a>
-      {{#if isShowingMenu}}
-        <div class="menu">
-          {{#link-to 'index'}}root{{/link-to}}
+        <div class="menu {{if isShowingMenu 'active'}}">
           {{#link-to 'home'}}home{{/link-to}}
           {{#link-to 'projects'}}projects{{/link-to}}
         </div>
-      {{/if}}
     </div><br><br>
     <p class="header-brief">
       Hello, I’m German. MURO is a canvas where I share my work and passion for all things design and tech, I’m a Chicago based product designer and front end developer.
