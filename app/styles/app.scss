@@ -1,15 +1,20 @@
 @import "normalize";
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "mixins";
 @import "breakpoints";
-@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
-
+@import "base";
 
 
 body {
   font-family: 'Rubik', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 300;
   position: relative;
+}
+
+.section-title {
+  letter-spacing: 10px;
 }
 
 .container {
@@ -17,13 +22,115 @@ body {
   margin: auto;
 }
 
+.section {
+  padding: 70px 0 10px;
+  clear: both;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 .header {
-  padding: 100px 0 50px;
+  padding: 80px 0 50px;
   .logo {
     max-width: 160px;
     height: auto;
+    float: left;
   }
 }
+
+.menu-container {
+  position: relative;
+  padding-top: 5px;
+}
+
+.menu-trigger {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    z-index: 300;
+    background: white;
+
+    .line {
+      width: 100%;
+      display: inline-block;
+      height: 1px;
+      background: black;
+      margin-top: 5px;
+      position: relative;
+      @include transition(all 0.2s ease-in);
+
+      &:after {
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 9px;
+        content: "";
+        left: 0;
+        width: 100%;
+        @include transition(all 0.2s ease-in);
+      }
+    }
+
+    .line.scape {
+      @include transform(rotate(45deg));
+      @include transition(all 0.2s ease-in);
+
+      &:after {
+        @include transform(rotate(90deg));
+        @include transition(all 0.2s ease-in);
+        top: 0;
+      }
+    }
+}
+
+.menu {
+  position: absolute;
+  right: -50px;
+  z-index: 100;
+  @include opacity(0);
+  padding: 10px;
+  visibility: hidden;
+  background-color: white;
+  @include transition(all 0.2s ease-in);
+  @include transition(opacity 0.5s ease-out);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  a {
+    margin-right: 0px;
+    text-decoration: none;
+  }
+
+  &.active {
+    min-height: 50px;
+    visibility: visible;
+    right: 35px;
+    @include opacity(1);
+    @include transition(all 0.2s ease-in);
+    @include transition(opacity 0.5s ease-in);
+
+    a {
+      margin-right: 30px;
+      color: black;
+      text-shadow: none;
+      @include transition(all 0.2s ease-in);
+    }
+  }
+}
+
+.header-brief {
+  margin-top: 50px;
+  clear: both;
+}
+
+
+// GRID
 
 .pr-th {
   width: 20%;
@@ -81,40 +188,13 @@ body {
 
 }
 
-.preview {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0, .8);
-  top: 0;
-  left: 0;
-  z-index: 200;
-  overflow-y: auto;
+// Home
 
-  img {
-    margin-top: 40px;
-  }
-  .btn {
-      float: right;
-  }
-}
+/* About Section */
 
-.btn {
-  background: white;
-  border: 1px solid black;
-  border-top: 0;
-  color: black;
-  padding: 10px;
-  letter-spacing: 8px;
-  cursor: pointer;
-  font-size: 13px;
-  text-transform: uppercase;
-
-  &.inverse {
-    background: black;
-    border: 1px solid white;
-    border-top: 0;
-    color: white;
+.links {
+  .button-primary {
+    margin-right: 20px;
   }
 }
 
@@ -156,10 +236,10 @@ body {
 .back-link {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 50px;
   width: 50px;
   height: 50px;
-  background-color: rgba(247, 247, 247, 0.7);
+  background-color: white;
   z-index: 300;
 }
 

@@ -1,12 +1,20 @@
 <section class="container">
   <header class="header" role="banner">
-    <img class="logo" src="images/muro-logo-black.png"><br><br><br>
-      <p>
-        Hello, I’m German. MURO is a canvas where I share my work and passion for all things design and tech, I’m a Chicago based product designer and front end developer.
-      </p>
-      {{#link-to 'index'}}root{{/link-to}}
-      {{#link-to 'home'}}home{{/link-to}}
-      {{#link-to 'projects'}}projects{{/link-to}}
+    {{#link-to 'home'}}
+      <img class="logo" src="images/muro-logo-black.png">
+    {{/link-to}}
+    <div class="menu-container"{{action 'hideMenu' on='mouseLeave'}}>
+      <a class="menu-trigger" {{action 'toggleMenu' on='click'}}>
+        <span class="line {{if isShowingMenu 'scape'}}"></span>
+      </a>
+        <div class="menu {{if isShowingMenu 'active'}}">
+          {{#link-to 'projects'}}WORK{{/link-to}}
+          {{#link-to 'about'}}ABOUT{{/link-to}}
+        </div>
+    </div><br><br>
+    <p class="header-brief">
+      Hello, I’m German. MURO is a canvas where I share my work and passion for all things design and tech, I’m a Chicago based product designer and front end developer.
+    </p>
   </header>
 </section>
 {{outlet}}
