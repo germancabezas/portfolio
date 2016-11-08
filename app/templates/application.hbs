@@ -1,13 +1,15 @@
 <section class="container">
   <header class="header" role="banner">
-    <img class="logo" src="images/muro-logo-black.png">
+    {{#link-to 'home'}}
+      <img class="logo" src="images/muro-logo-black.png">
+    {{/link-to}}
     <div class="menu-container"{{action 'hideMenu' on='mouseLeave'}}>
       <a class="menu-trigger" {{action 'toggleMenu' on='click'}}>
         <span class="line {{if isShowingMenu 'scape'}}"></span>
       </a>
         <div class="menu {{if isShowingMenu 'active'}}">
-          {{#link-to 'home'}}home{{/link-to}}
-          {{#link-to 'projects'}}projects{{/link-to}}
+          {{#link-to 'projects'}}WORK{{/link-to}}
+          {{#link-to 'about'}}ABOUT{{/link-to}}
         </div>
     </div><br><br>
     <p class="header-brief">
