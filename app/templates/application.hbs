@@ -3,8 +3,7 @@
     <img class="logo" src="images/muro-logo-black.png">
     <div class="menu-container"{{action 'hideMenu' on='mouseLeave'}}>
       <a class="menu-trigger" {{action 'toggleMenu' on='click'}}>
-        <span class="line"></span>
-        <span class="line"></span>
+        <span class="line {{if isShowingMenu 'scape'}}"></span>
       </a>
         <div class="menu {{if isShowingMenu 'active'}}">
           {{#link-to 'home'}}home{{/link-to}}
