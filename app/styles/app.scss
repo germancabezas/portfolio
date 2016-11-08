@@ -1,7 +1,8 @@
 @import "normalize";
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "mixins";
 @import "breakpoints";
-@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "base";
 
 
 
@@ -170,6 +171,17 @@ body {
   }
 
 }
+
+// Home
+
+/* About Section */
+
+.links {
+  .button-primary {
+    margin-right: 20px;
+  }
+}
+
 // Project Show page
 
 .container-absolute {

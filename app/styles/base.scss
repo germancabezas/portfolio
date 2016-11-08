@@ -1,0 +1,16 @@
+.button-primary {
+  background-color: white;
+  border: 1px solid black;
+  border-top: 0;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  margin: 10px 0;
+  display: inline-block;
+
+  &:hover {
+    background: black;
+    color: white;
+    @include transition(all 0.2s ease-in);
+  }
+}
