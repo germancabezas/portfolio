@@ -1,16 +1,63 @@
+// Variables
+
+$gray: #9da2aa;
+$dark-gray: #535359;
+
+//  Typography
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
 .button-primary {
   background-color: white;
   border: 1px solid black;
   border-top: 0;
-  padding: 10px 15px;
+  padding: 5px 15px;
   text-decoration: none;
   color: black;
+  letter-spacing: 5px;
+  min-width: 130px;
   margin: 10px 0;
   display: inline-block;
+  font-size: .9em;
+  text-align: center;
 
   &:hover {
     background: black;
     color: white;
     @include transition(all 0.2s ease-in);
+  }
+
+  // variants
+
+  &.inverse {
+    background-color: black;
+    border: 1px solid white;
+    border-top: 0;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}
+
+
+.button-simple {
+  padding: 5px;
+  letter-spacing: 1px;
+  color: black;
+  border-bottom: 1px solid black;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px dashed black;
+    @include transition(all 0.5s ease-in);
   }
 }

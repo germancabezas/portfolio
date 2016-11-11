@@ -7,14 +7,17 @@
 
 body {
   font-family: 'Rubik', sans-serif;
-  font-size: 14px;
-  line-height: 1.5em;
-  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.7em;
+  // font-weight: 300;
   position: relative;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .section-title {
-  letter-spacing: 10px;
+  letter-spacing: 12px;
+  margin-bottom: 25px;
 }
 
 .container {
@@ -30,12 +33,19 @@ body {
     display: table;
     clear: both;
   }
+
+  h4>span.title-des {
+    color: $gray;
+    margin-left: 10px;
+    border-left: 1px solid $gray;
+    padding-left: 10px;
+  }
 }
 
 .header {
-  padding: 80px 0 50px;
+  padding: 50px 0 30px;
   .logo {
-    max-width: 160px;
+    max-width: 140px;
     height: auto;
     float: left;
   }
@@ -43,7 +53,6 @@ body {
 
 .menu-container {
   position: relative;
-  padding-top: 5px;
 }
 
 .menu-trigger {
@@ -94,7 +103,7 @@ body {
   right: -50px;
   z-index: 100;
   @include opacity(0);
-  padding: 10px;
+  padding: 8px;
   visibility: hidden;
   background-color: white;
   @include transition(all 0.2s ease-in);
@@ -178,7 +187,7 @@ body {
       visibility: visible;
       @include opacity(1);
       padding: 40px 10px;
-      @include transition(opacity 0.4s ease-in 0.3s);
+      @include transition(opacity 0.3s ease-in 0.3s);
     }
 
     .pr-th-img img {
@@ -192,9 +201,23 @@ body {
 
 /* About Section */
 
-.links {
+.links, .links-projects {
+
+  margin-top: 30px;
+
+  .button-simple {
+    margin-right: 30px;
+  }
+
   .button-primary {
-    margin-right: 20px;
+    float: right;
+    margin-top: 0;
+  }
+}
+
+.links-projects {
+  .button-primary {
+    margin-top: 30px;
   }
 }
 
@@ -249,12 +272,22 @@ body {
 .footer {
   background: black;
   color: white;
-  padding: 100px 0;
+  padding: 60px 0 80px;
   margin-top: 50px;
   text-align: center;
   clear: both;
 
   .container {
     padding: 20px;
+  }
+
+  .isotype {
+    width: 44px;
+    display: block;
+    margin: auto;
+  }
+
+  .cr {
+    color: $dark-gray;
   }
 }

@@ -1,5 +1,5 @@
 <div class="container">
-  <h3 class="section-title"> RECENT WORK</h3>
+  <h3 class="section-title"> HOME</h3>
 </div>
 {{#each model as |project|}}
   {{#if project.recent}}
@@ -21,6 +21,9 @@
       {{/link-to}}
     {{/if}}
   {{/each}}
+  <div class="container links-projects">
+    {{#link-to "projects" class="button-primary"}}VIEW ALL{{/link-to}}
+  </div>
 <div class="container">
   <div class="section">
     <h3 class="section-title">ABOUT</h3>
@@ -28,16 +31,16 @@
       Playing a hybrid designer/developer role has open up the doors to a very versatile skill set. During my career I have worked as an art director, project manager, front-end developer, UI-UX and visual designer. My goal, to build meaningful products by using the right tools, making descisions that put humans at the center of the design process and facilitating an open line of communication between the building actors and components of the product.
     </p>
     <div class="links">
-      <a class="button-primary" href="https://github.com/germancabezas">Github</a>
-      <a class="button-primary" href="https://github.com/germancabezas">Linkedin</a>
-      <a class="button-primary" href="https://github.com/germancabezas">Twitter</a>
-      <a class="button-primary" href="https://github.com/germancabezas">Behance</a>
-      <a class="button-primary" href="https://github.com/germancabezas">VIEW RESUME</a>
+      <a class="button-simple" href="https://github.com/germancabezas">Github</a>
+      <a class="button-simple" href="https://github.com/germancabezas">Linkedin</a>
+      <a class="button-simple" href="https://github.com/germancabezas">Twitter</a>
+      <a class="button-simple" href="https://github.com/germancabezas">Behance</a>
+      {{#link-to "about" class="button-primary"}}VIEW RESUME{{/link-to}}
     </div>
   </div>
   <div class="section">
     <h3 class="section-title">INVOLVEMENT</h3>
-    <h4>Code Latino <span>Co-founder</span></h4>
+    <h4>Code Latino <span class="title-des">Co-founder</span></h4>
     <p>
       CodeLatino's mission is to empower the Latino community to pursue careers in tech. By providing training and networking opportunities, we believe we can help narrow the diversity gap in the tech industry. As a co-founder I help develop events and partnerships that can promote CL's mission.
     </p>
