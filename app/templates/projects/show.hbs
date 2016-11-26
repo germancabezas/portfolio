@@ -1,10 +1,10 @@
 <div class="container container-absolute">
-  <div class="item-description">
-    {{model.description}}
-  </div>
   <div class="item-body">
     <h2>{{model.title}}</h2>
     {{#each model.images as |item|}}
+      <div class="item-description">
+        {{model.description}}
+      </div>
         <img src="{{item.image}}">
     {{/each}}
   </div>
