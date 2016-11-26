@@ -1,11 +1,16 @@
 <div class="container container-absolute">
   <div class="item-body">
     <h2>{{model.title}}</h2>
+    <div class="item-description">
+      {{model.description}}
+    </div><br><br>
+    TAGS:<br>
+    {{#each model.tags as |tag|}}
+    {{tag.tag}},
+    {{/each}}
     {{#each model.images as |item|}}
-      <div class="item-description">
-        {{model.description}}
-      </div>
         <img src="{{item.image}}">
     {{/each}}
+
   </div>
 </div>
